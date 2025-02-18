@@ -10,8 +10,483 @@ body {
     text-align: center; 
 }
 
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 header, footer {
-    background-color: var(--blue-grey-900);
     color: #fff;
-    padding: 2rem 4rem;   
+    padding: 2rem 2rem;   
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #111111;
+    justify-content: center;
+}
+
+.header-logo-content{
+    display: flex;
+}
+
+header a{
+    text-decoration: none;
+    color: #FFFF;
+
+}
+
+h1{
+    font-size: 3.5rem;
+    font-family: "Libre Baskerville", serif;
+}
+header img {
+    width: 30%;
+    height: 7.5vh;
+}
+
+header nav{
+    margin-top: 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+footer{
+    background-color: #191919;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer img{
+    width: 30%;
+    height: 8vh;
+}
+
+h2{
+    font-family: "Libre Baskerville", serif;
+    font-size: 2rem;
+}
+
+main a {
+    background-color: #111111;
+    color: var(--blue-grey-100);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    font-family: "Libre Baskerville", serif;
+    border-radius: 0.375rem;
+}
+main nav{
+    margin: 2rem;
+}
+
+.about-us-section{
+    background-color: var(--blue-grey-50);
+    padding: 4rem .8rem;
+    margin-bottom: 4rem;
+    align-items: center;
+}
+
+.about-us-section img{
+    border-radius: 1rem;
+    max-width: 90%;
+    margin-top: 1rem;
+}
+
+.background-container p{
+    max-width: 90%;
+}
+
+.star{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ceo-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #78909C;
+    padding: 4rem 2rem;
+    color: white;
+}
+
+.architecture-section{
+    background-color: var(--blue-grey-100);
+    padding: 4rem 2rem;
+}
+
+.architecture-section ul{
+    padding: .95rem;
+}
+.architecture-section li{
+    margin-bottom: 1rem;
+}
+
+.architecture-information{
+    text-align: left;
+}
+
+.sign-up-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90rem;
+    align-items: center;
+    border-radius: 0.375rem;
+}
+
+.sign-up-container h2{
+    margin: 0;
+}
+
+.sign-up-container a{
+    padding: 1rem;
+}
+
+.background-container{
+    background-color: #37474F;
+    padding: 4rem 2rem;
+    height: 32.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.nav-container nav{
+    width:5.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-section-container p{
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+.nav-section-container a{
+    text-decoration: none;
+    color: white;
+    font-size: .75rem;
+}
+
+footer{
+    padding: 4rem 2rem;
+    text-align: left;
+}
+
+footer p {
+    font-size: .75rem;
+    color: var(--blue-grey-200);
+}
+
+.footer-logo-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer > p:last-of-type{
+    text-align: center;
+}
+
+@media screen and (min-width: 720px){
+
+    header > img{
+        width: 15%;
+        height: 25%;
+        margin-right: 9.5rem;
+    }
+    
+    header{
+        justify-content: space-between;
+    }
+    
+
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        text-align: left;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+
+    .flex-container > div{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 45%;
+    }
+
+    .architecture-information > img{
+        width: 45%;
+        height: 20%;
+    }
+
+    .architecture-information{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+    }
+    .architecture-information > div{
+        width: 50%;
+    }
+
+    .architecture-img-2{
+        order: -1;
+    }
+
+    .sign-up-container{
+        width: 80%;
+    }
+
+    footer img{
+        width: 30%;
+    }
+
+    footer{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo-content{
+        width: 50%;
+    }
+
+    .footer-logo-content p{
+        width: 80%;
+    }
+    
+    footer > p:last-of-type{
+        width: 70%;
+    }
+    
+    .footer-logo-content p {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    .home-page-container{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    header img{
+        height: 4rem;
+        width: 30%;
+    }
+    footer img{
+        height: 5rem;
+    }
+
+    .flex-container div{
+        width: 30%;
+    }
+
+    .creating-spaces p:first-of-type{
+        width: 95%;
+    }
+
+    .creating-spaces{
+        align-items: center;
+    }
+
+    .architecture-information{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .architecture-information div{
+        width: 90%;
+    }
+
+    .architecture-information-flex{
+        display: flex;
+    }
+
+    .architecture-information img{
+        width: 90%;
+        height: 50%;
+    }
+
+    .architecture-img-2{
+        order: 0;
+    }
+
+    footer h1{
+        margin-bottom: 1rem;
+    }
+    
+}
+
+/*gallery set up*/ 
+.gallery-page-container section{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.gallery-page-container p, h3, li{
+    text-align: left;
+}
+.art-gallery{
+    background-color: var(--blue-grey-50);
+    padding-top: 2rem;
+}
+
+.art-gallery img{
+    width: 80%;
+}
+
+
+.art-gallery-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.art-gallery-image-container img{
+    order: -1;
+}
+
+.art-gallery-image-container p{
+    order: -1;
+}
+
+.estudes-quote{
+    padding: 1rem;
+}
+
+.cultural-exchange-container{
+    background-color: #78909C;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.features-and-highlights-container{
+    background-color: #37474F;
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.features-and-highlights-container h2{
+    text-align: left;
+}
+
+.features-and-highlights-container li{
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 720px){
+
+    .art-gallery img{
+        width: 50%;
+    }
+
+    .art-gallery h3{
+        margin-top: 0;
+    }
+
+    .creativity-text-container{
+        width: 40%;
+    }
+
+    .creativity-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .art-gallery-image-container img{
+        order: 0;
+    }
+
+    .art-gallery-image-container p{
+        order: 0;
+    }
+
+    .art-gallery-image-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .estudes-quote{
+        padding: 2rem;
+    }
+
+    .cultural-exchange-flex p{
+        width: 40%;
+    }
+
+    .cultural-exchange-flex{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .cultural-exchange-flex p:nth-of-type(2){
+        order: 1;
+    }
+
+    .cultural-exchange-flex p:nth-of-type(4){
+        order: 1;
+    }
+
+    .features-and-highlights-container h2{
+        text-align: center;
+    }
+
+    .features-and-highlights-container-flexbox{
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .image-flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hosting-events{
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    .art-gallery{
+        gap: 2rem;
+    }
+
+    .creativity-container{
+        align-items: center;
+    }
+
+    .gallery-page-container{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
 }
