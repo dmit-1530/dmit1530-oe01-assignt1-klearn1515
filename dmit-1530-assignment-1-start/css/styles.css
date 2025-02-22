@@ -205,7 +205,6 @@ footer > p:last-of-type{
     header > img{
         width: 15%;
         height: 25%;
-        margin-right: 9.5rem;
     }
     
     header{
@@ -348,7 +347,7 @@ footer > p:last-of-type{
 }
 
 .art-gallery img{
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -396,6 +395,22 @@ footer > p:last-of-type{
 
     .art-gallery img{
         width: 50%;
+    }
+
+    .image-description{
+        width: 50%;
+    }
+
+    .image-description img{
+        width: 100%;
+        height: 70%;
+    }
+
+    .creativity-text-container-and-image-description{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .art-gallery h3{
@@ -477,16 +492,16 @@ footer > p:last-of-type{
 
 @media screen and (min-width: 1000px){
 
+    .gallery-page-container{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
     .art-gallery{
         gap: 2rem;
     }
 
     .creativity-container{
         align-items: center;
-    }
-
-    .gallery-page-container{
-        max-width: 1024px;
-        margin: 0 auto;
     }
 }
